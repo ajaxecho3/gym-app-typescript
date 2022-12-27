@@ -54,7 +54,7 @@ const Navbar = <T extends Props>({selectedPage, setSelectedPage, isTopOfPage}: T
       
 
       {
-        !isAboveMediumSceens && isMenutoggled && (
+        !isAboveMediumSceens() && isMenutoggled && (
           <div className='fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-lg'>
             <div className='flex justify-end p-12'>
               <button onClick={() => setIsMenuToggled(!isMenutoggled)}>
